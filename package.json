@@ -2,9 +2,11 @@
   "name": "await-retry",
   "version": "1.0.2",
   "description": "# install `npm i await-retry --save`",
-  "main": "index.js",
+  "main": "dist.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup index.js --format umd --name \"await-retry\" --file dist.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/eptaccio/await-retry/issues"
   },
-  "homepage": "https://github.com/eptaccio/await-retry#readme"
+  "homepage": "https://github.com/eptaccio/await-retry#readme",
+  "devDependencies": {
+    "rollup": "^0.64.1"
+  }
 }
