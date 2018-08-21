@@ -5,21 +5,21 @@
 }(this, (function () { 'use strict';
 
   const defaultContext = {
-    tentatives: 1,
+    tries: 1,
     errors: []
   };
 
-  const retry = async (fn, { tentatives = 1, context = defaultContext } = {}) => {
+  const retry = async (fn, { tries = 1, context = defaultContext } = {}) => {
     try {
       const result = await fn();
 
       return {
-        tentatives: context.tentatives,
+        tries: context.tries,
         result,
         success: true
       }
     } catch (error) {
-      if (tentatives === context.tentatives) {
+      if (tries === context.tries) {
         return {
           ...context,
           success: false
@@ -27,9 +27,9 @@
       }
 
       return retry(fn, {
-        tentatives,
+        tries,
         context: {
-          tentatives: context.tentatives + 1,
+          tries: context.tries + 1,
           errors: [
             ...context.errors,
             error
