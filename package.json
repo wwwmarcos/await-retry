@@ -1,0 +1,24 @@
+{
+  "name": "retry-promise",
+  "version": "1.0.0",
+  "description": "# install `npm i retry-promise --save`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eptaccio/retry-promise.git"
+  },
+  "keywords": [
+    "promise",
+    "retry",
+    "promise-tentatives"
+  ],
+  "author": "@eptaccio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eptaccio/retry-promise/issues"
+  },
+  "homepage": "https://github.com/eptaccio/retry-promise#readme"
+}

@@ -1,11 +1,4 @@
-# retry-promise
-
-# install
-`npm i retry-promise --save`
-
-# usage example
-```js
-const { retry } = require('retry-promise')
+const { retry } = require('./index')
 
 function getUser () {
   return {
@@ -41,4 +34,3 @@ async function start () {
 }
 
 start()
-```
