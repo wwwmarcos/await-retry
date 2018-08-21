@@ -23,7 +23,7 @@ async function start () {
     }
    */
 
-  console.log(await retry(getUserWithError, { tries: 10 }))
+  console.log(await retry(getUserWithError, { tries: 3 }))
   /**
    * {
        tentatives: 2,
