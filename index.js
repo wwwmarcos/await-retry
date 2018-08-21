@@ -3,7 +3,7 @@ const defaultContext = {
   errors: []
 }
 
-const retry = async (fn, { tentatives, context = defaultContext } = {}) => {
+const retry = async (fn, { tentatives = 1, context = defaultContext } = {}) => {
   try {
     const result = fn()
 
