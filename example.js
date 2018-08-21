@@ -14,7 +14,7 @@ function getUserWithError () {
 }
 
 async function start () {
-  console.log(await retry(getUser, { tentatives: 2 }))
+  console.log(await retry(getUser, { tries: 2 }))
   /**
     {
      tentatives: 1,
@@ -23,7 +23,7 @@ async function start () {
     }
    */
 
-  console.log(await retry(getUserWithError, { tentatives: 2 }))
+  console.log(await retry(getUserWithError, { tries: 10 }))
   /**
    * {
        tentatives: 2,
