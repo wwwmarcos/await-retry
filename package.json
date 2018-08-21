@@ -1,6 +1,6 @@
 {
   "name": "await-retry",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "# install `npm i await-retry --save`",
   "main": "dist.js",
   "scripts": {
