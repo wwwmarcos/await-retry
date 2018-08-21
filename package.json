@@ -1,14 +1,14 @@
 {
-  "name": "retry-promise",
+  "name": "await-retry",
   "version": "1.0.0",
-  "description": "# install `npm i retry-promise --save`",
+  "description": "# install `npm i await-retry --save`",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eptaccio/retry-promise.git"
+    "url": "git+https://github.com/eptaccio/await-retry.git"
   },
   "keywords": [
     "promise",
@@ -18,7 +18,7 @@
   "author": "@eptaccio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eptaccio/retry-promise/issues"
+    "url": "https://github.com/eptaccio/await-retry/issues"
   },
-  "homepage": "https://github.com/eptaccio/retry-promise#readme"
+  "homepage": "https://github.com/eptaccio/await-retry#readme"
 }
