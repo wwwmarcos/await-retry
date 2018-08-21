@@ -1,11 +1,11 @@
-# retry-promise
+# await-retry
 
 # install
-`npm i retry-promise --save`
+`npm i await-retry --save`
 
 # usage example
 ```js
-const { retry } = require('retry-promise')
+const { retry } = require('await-retry')
 
 function getUser () {
   return {
