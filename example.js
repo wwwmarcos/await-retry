@@ -1,6 +1,6 @@
 const { retry } = require('./index')
 
-function getUser () {
+async function getUser () {
   return {
     message: 'wow, amazing',
     user: {

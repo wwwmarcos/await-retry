@@ -5,7 +5,7 @@ const defaultContext = {
 
 const retry = async (fn, { tentatives = 1, context = defaultContext } = {}) => {
   try {
-    const result = fn()
+    const result = await fn()
 
     return {
       tentatives: context.tentatives,
