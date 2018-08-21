@@ -21,19 +21,19 @@ function getUserWithError () {
 }
 
 async function start () {
-  console.log(await retry(getUser, { tentatives: 2 }))
+  console.log(await retry(getUser, { tries: 2 }))
   /**
     {
-     tentatives: 1,
+     tries: 1,
      success: true,
      result: { message: 'wow, amazing', user: { name: 'enzo' } },
     }
    */
 
-  console.log(await retry(getUserWithError, { tentatives: 2 }))
+  console.log(await retry(getUserWithError, { tries: 2 }))
   /**
    * {
-       tentatives: 2,
+       tries: 2,
        success: false,
        errors: [Error: oh no..., Error: oh no]
      }
